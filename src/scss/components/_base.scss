@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+body::after {
+  content: '';
+  background: url(../img/abstract-1850424_1920.jpg) no-repeat center center
+    fixed;
+  opacity: 0.15;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+section {
+  margin: 40vh 0;
+}
+
+h1 {
+  font-size: 7rem;
+  color: white;
+  letter-spacing: 20px;
+}
