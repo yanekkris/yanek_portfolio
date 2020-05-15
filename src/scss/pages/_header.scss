@@ -1,0 +1,48 @@
+.fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  &__border {
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    border: white 3px solid;
+  }
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__nav {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: space-between;
+      img {
+        width: 1.5rem;
+      }
+      a {
+        height: 2rem;
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}

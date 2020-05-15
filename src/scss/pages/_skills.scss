@@ -1,15 +1,27 @@
 .skills {
   width: $main_width;
   margin: 0 auto;
+  padding: 5rem 0;
   &__container {
+    position: relative;
+    height: 100vh;
     div {
-      width: 4rem;
-      height: 4rem;
+      width: 5rem;
+      height: 5rem;
       border-radius: 50%;
       color: white;
-      line-height: 4rem;
+      line-height: 5rem;
       opacity: 0.5;
       background-color: rgba(131, 131, 131, 0.349);
+      position: absolute;
+      &:first-child {
+        top: 10rem;
+        left: 3rem;
+      }
+      &:nth-child(2) {
+        top: 16rem;
+        left: 8rem;
+      }
     }
   }
 }
