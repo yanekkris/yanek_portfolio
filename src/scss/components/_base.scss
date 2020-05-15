@@ -7,20 +7,18 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 body {
-  background-color: black;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(84, 84, 84, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
   text-align: center;
   color: white;
+  background-attachment: fixed;
 }
 
-body::after {
-  content: '';
-  background: url(../img/DSC_0364.JPG) no-repeat center center fixed;
-  background-size: cover;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
+section {
+  min-height: 100vh;
 }

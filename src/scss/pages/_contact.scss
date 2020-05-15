@@ -1,0 +1,118 @@
+.contact {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    padding: 5rem 7rem;
+    h1 {
+      font-size: 2.7rem;
+      text-transform: uppercase;
+    }
+    & > div {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__left {
+    &__info {
+      h4 {
+        width: fit-content;
+        margin: 2rem auto 0.7rem;
+        padding: 0.2rem;
+        letter-spacing: 1px;
+        border-bottom: $main_color 2px solid;
+      }
+      span {
+        opacity: 0.7;
+        letter-spacing: 2px;
+      }
+    }
+    h1 {
+      color: $main_color;
+    }
+    p {
+      margin: 2rem 0 2rem;
+      line-height: 1.7rem;
+      color: rgb(189, 188, 188);
+    }
+  }
+  &__form {
+    padding: 3rem 2rem;
+    box-shadow: black -5px 5px 50px;
+    form {
+      text-align: center;
+      width: 70%;
+    }
+    input {
+      display: block;
+      width: 100%;
+      margin-top: 1.5rem;
+      padding: 0.5rem 0;
+    }
+    input:not(:last-child) {
+      background: none;
+      border: none;
+      border-bottom: grey 2px solid;
+    }
+
+    input:last-child {
+      width: auto;
+      color: white;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      letter-spacing: 0.1rem;
+      font-weight: 300;
+      padding: 1rem 1.5rem;
+      margin: 1.5rem auto;
+      box-shadow: black 5px 5px 15px;
+    }
+  }
+  @media (max-width: 1100px) {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 7rem;
+      & > div:first-child {
+        width: 70%;
+      }
+      & > div:last-child {
+        width: 65%;
+      }
+    }
+    &__left {
+      &__info {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+    &__form {
+      margin-top: 4rem;
+    }
+  }
+  @media (max-width: 970px) {
+    &__left {
+      &__info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    }
+    &__container {
+      & > div:first-child {
+        width: 90%;
+      }
+      & > div:last-child {
+        width: 90%;
+      }
+    }
+  }
+}
