@@ -82,7 +82,7 @@
         width: 70%;
       }
       & > div:last-child {
-        width: 65%;
+        width: 80%;
       }
     }
     &__left {
@@ -94,7 +94,7 @@
       }
     }
     &__form {
-      margin-top: 4rem;
+      margin-top: 7rem;
     }
   }
   @media (max-width: 970px) {
@@ -113,6 +113,11 @@
       & > div:last-child {
         width: 90%;
       }
+    }
+  }
+  @media (max-width: 650px) {
+    &__container {
+      padding: 5rem 1rem;
     }
   }
 }
