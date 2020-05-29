@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yanek.WebDev.</title>
     <link rel="stylesheet" href="/css/index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="fixed">
-      <div class="fixed__border">
-        <div class="fixed__top">
-          <h1>YANEK<span class="yellow">.</span></h1>
-          <nav class="fixed__top__nav">
-            <a href="#about">about.</a>
-            <a href="#skills">skills.</a>
-            <a href="#projects">projects.</a>
-            <a href="#contact">contact.</a>
-          </nav>
-        </div>
+      <div class="fixed__top">
+        <h1>YANEK<span class="yellow">.</span></h1>
+        <nav class="fixed__top__nav">
+          <a href="#about">about me.</a>
+          <a href="#skills">skills.</a>
+          <a href="#projects">projects.</a>
+          <a href="#contact">contact.</a>
+        </nav>
       </div>
     </header>
     <section id="home" class="home">
@@ -83,21 +82,21 @@
     <section id="projects" class="projects">
       <div class="projects__container">
         <div class="projects__container__projects">
-          <div class="projects__container__project">
+          <div data-aos="fade-down" class="projects__container__project">
             <div class="projects__container__img"></div>
             <div class="projects__container__about">
               <h4>My portfolio website</h4>
               <span>react - sass - gulp</span>
             </div>
           </div>
-          <div class="projects__container__project">
+          <div data-aos="fade-down" class="projects__container__project">
             <div class="projects__container__img"></div>
             <div class="projects__container__about">
               <h4>Github Profile</h4>
               <span>react - sass - gulp</span>
             </div>
           </div>
-          <div class="projects__container__project">
+          <div data-aos="fade-down" class="projects__container__project">
             <div class="projects__container__img"></div>
             <div class="projects__container__about">
               <h4>Spotify Profile</h4>
@@ -147,5 +146,10 @@
         </div>
       </div>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
