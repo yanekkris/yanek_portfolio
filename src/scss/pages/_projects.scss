@@ -1,0 +1,50 @@
+.projects {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+
+    &__text {
+      width: 45%;
+      p {
+        color: $secondary_color;
+      }
+    }
+    &__projects {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    &__project {
+      //   border: grey 2px solid;
+      box-shadow: rgb(15, 15, 15) 0px 3px 20px;
+      width: 330px;
+      //background-color: #f7b8445c;
+
+      height: 360px;
+    }
+    &__img {
+      height: 65%;
+      background: url(../../img/portfolio.png) center center no-repeat;
+      background-size: cover;
+    }
+    &__about {
+      padding: 2rem 1.5rem;
+      text-align: left;
+      h4 {
+        letter-spacing: 2px;
+        color: $secondary_color;
+      }
+      span {
+        margin-top: 20px;
+        text-transform: uppercase;
+        color: $main_color;
+        // text-align: center;
+        display: block;
+        letter-spacing: 4px;
+      }
+    }
+  }
+}

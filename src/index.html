@@ -12,63 +12,111 @@
         <div class="fixed__top">
           <h1>YANEK<span class="yellow">.</span></h1>
           <nav class="fixed__top__nav">
+            <a href="#about">about.</a>
             <a href="#skills">skills.</a>
             <a href="#projects">projects.</a>
             <a href="#contact">contact.</a>
           </nav>
         </div>
-        <div class="fixed__bottom">
-          <!-- <nav class="fixed__bottom__nav">
-            <a href="#"><img src="img/li.svg" alt="" /></a>
-            <a href="#"><img src="img/gh.svg" alt="" /></a>
-            <a href="#"><img src="img/fb.svg" alt="" /></a>
-            <a href="#"><img src="img/ig.svg" alt="" /></a>
-          </nav> -->
-          <h3>scroll.</h3>
-        </div>
       </div>
     </header>
     <section id="home" class="home">
       <div class="home__middle">
-        <span>I'm</span>
+        <span>Hello, I'm</span>
         <h1>Kristina</h1>
-        <span>Junior Web Developer (or maybe not)</span>
+        <span>Junior Web Developer</span>
       </div>
     </section>
     <section id="about" class="about">
-      <div>
-        <h1>Something about me</h1>
+      <div class="about__container">
+        <h1 class="about__title section__title">Something about me.</h1>
+        <p>Hello! I'm Kristina, a Junior Web Developer based in Slovakia.</p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quae
+          illum, dolorum distinctio ab vero, quas quasi iusto voluptate dicta
+          doloribus nostrum voluptatem molestias molestiae explicabo! Provident
+          earum quisquam distinctio eveniet odio! Harum, id quos explicabo quam
+          dolore necessitatibus, culpa voluptas modi unde corrupti voluptatum
+          quisquam similique magni amet rem.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Reprehenderit soluta non magnam sequi ullam animi sint. Nisi dolorem
+          quam sapiente cupiditate ut at vitae est fuga dolorum.
+        </p>
+        <div class="about__links">
+          <a href="https://github.com/yanekkris">My Github</a>
+          <a href="#">My CV</a>
+        </div>
       </div>
     </section>
     <section id="skills" class="skills">
-      <h1>Skills I know or Want to know</h1>
+      <h1 class="section__title">Skills / Tools</h1>
       <div class="skills__container">
-        <div class="html">HTML</div>
-        <div class="css">CSS</div>
-        <div class="sass">SASS</div>
-        <div class="javascript">JS</div>
-        <div class="react">React</div>
-        <div class="php">PHP</div>
-        <div class="laravel">Laravel</div>
+        <div class="skills__skill middle less_advanced">MySQL</div>
+        <div class="skills__skill middle less_advanced">React.js</div>
+        <div class="skills__skill advanced">CSS</div>
+        <div class="skills__skill advanced">Sass</div>
+        <div class="skills__skill bigger">Gulp</div>
+        <div class="skills__skill bigger">Webpack</div>
+        <div class="skills__skill less_advanced">PHP</div>
+        <div class="skills__skill less_advanced">Laravel</div>
+        <div class="skills__skill less_advanced">Git</div>
+        <div class="skills__skill">npm</div>
+        <div class="skills__skill bigger advanced">Javascript</div>
+        <div class="skills__skill bigger">Docker</div>
+        <div class="skills__skill">AJAX</div>
+        <div class="skills__skill middle">Redux</div>
+        <div class="skills__skill advanced">HTML</div>
+        <!-- <div class="skills__future javascript bigger">Javascript</div>
+        <div class="skills__future react middle">Swift</div>
+        <div class="skills__future css">Go</div>
+        <div class="skills__future sass">GraphQL</div>
+        <div class="skills__future gulp">Gulp</div>
+        <div class="skills__future webpack bigger">Webpack</div>
+        <div class="skills__future php">PHP</div>
+        <div class="skills__future laravel bigger">Laravel</div>
+        <div class="skills__future git">Git</div>
+        <div class="skills__future npm">npm</div> -->
       </div>
     </section>
     <section id="projects" class="projects">
       <div class="projects__container">
-        <h1>My projects</h1>
+        <div class="projects__container__projects">
+          <div class="projects__container__project">
+            <div class="projects__container__img"></div>
+            <div class="projects__container__about">
+              <h4>My portfolio website</h4>
+              <span>react - sass - gulp</span>
+            </div>
+          </div>
+          <div class="projects__container__project">
+            <div class="projects__container__img"></div>
+            <div class="projects__container__about">
+              <h4>Github Profile</h4>
+              <span>react - sass - gulp</span>
+            </div>
+          </div>
+          <div class="projects__container__project">
+            <div class="projects__container__img"></div>
+            <div class="projects__container__about">
+              <h4>Spotify Profile</h4>
+              <span>react - sass - gulp</span>
+            </div>
+          </div>
+        </div>
+        <div class="projects__container__text">
+          <h1 class="section__title">Some Things I've build.</h1>
+        </div>
       </div>
     </section>
-    <section id="projects"></section>
+
     <section id="contact" class="contact">
       <div class="contact__container">
         <div class="contact__left">
           <h1>Contact.</h1>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
-            voluptate labore est fugiat eveniet quis aliquam provident quo unde
-            corporis! Odio, illum dicta! Vitae magni, cum eos in alias autem
-            accusantium illum omnis placeat eligendi fugiat repudiandae incidunt
-            beatae ullam harum iste illo ratione. Explicabo saepe soluta labore
-            eaque maiores.
+            Want to chat about something?
           </p>
           <div class="contact__left__info">
             <div class="contact__left__phone">
@@ -93,8 +141,8 @@
             <input type="text" name="" id="" placeholder="name" />
             <input type="number" name="" id="" placeholder="your number" />
             <input type="email" name="" id="" placeholder="your email" />
-            <input type="texta" name="" id="" placeholder="your message" />
-            <input type="submit" value="send message ->" />
+            <input type="text" name="" id="" placeholder="your message" />
+            <input type="submit" placeholder="your message" class="button" />
           </form>
         </div>
       </div>

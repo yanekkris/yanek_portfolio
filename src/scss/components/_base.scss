@@ -5,14 +5,17 @@
 }
 html {
   font-family: 'Montserrat', sans-serif;
+  line-height: 1.4;
 }
 body {
   background: rgb(0, 0, 0);
-  background: radial-gradient(
-    circle,
+  background: linear-gradient(
+    307deg,
     rgba(0, 0, 0, 1) 0%,
-    rgba(84, 84, 84, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
+    rgba(0, 0, 0, 1) 0%,
+    rgba(46, 43, 47, 1) 28%,
+    rgba(73, 72, 69, 1) 64%,
+    rgba(3, 1, 4, 1) 100%
   );
   text-align: center;
   color: white;
@@ -21,4 +24,12 @@ body {
 
 section {
   min-height: 100vh;
+  padding: 3rem;
+}
+.section__title {
+  font-size: 2.3rem;
+  color: $main_color;
+  padding-top: 6rem;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
 }
