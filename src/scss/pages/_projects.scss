@@ -20,14 +20,25 @@
     &__project {
       //   border: grey 2px solid;
       box-shadow: rgb(15, 15, 15) 0px 3px 20px;
-      width: 330px;
+      background-color: #f7b84467;
+      width: 370px;
       //background-color: #f7b8445c;
 
       height: 360px;
     }
     &__img {
       height: 65%;
+    }
+    .portfolio__img {
       background: url(../../img/portfolio.png) center center no-repeat;
+      background-size: cover;
+    }
+    .trum__img {
+      background: url(../../img/trum.png) center center no-repeat;
+      background-size: cover;
+    }
+    .watchman__img {
+      background: url(../../img/watchman.jpg) center center no-repeat;
       background-size: cover;
     }
     &__about {

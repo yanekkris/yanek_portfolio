@@ -1,0 +1,22 @@
+.motto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./../../img/yellow_dust.png);
+  background-size: cover;
+  p {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  .finished {
+    color: $main_color;
+    border-bottom: 4px solid white;
+    &:hover {
+      color: $main_color;
+      border-bottom: 4px solid white;
+    }
+  }
+  p:hover {
+    color: white;
+  }
+}
